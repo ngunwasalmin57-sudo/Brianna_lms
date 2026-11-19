@@ -1,0 +1,40 @@
+{
+  "name": "bml-lms-backend",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:setup": "tsx src/setup.ts",
+    "db:setup:compiled": "node dist/setup.js",
+    "db:bootstrap-admin": "tsx src/bootstrapAdmin.ts",
+    "db:bootstrap-admin:compiled": "node dist/bootstrapAdmin.js",
+    "db:disable-legacy-demos": "tsx src/disableLegacyDemoAccounts.ts",
+    "db:disable-legacy-demos:compiled": "node dist/disableLegacyDemoAccounts.js",
+    "db:seed-demo": "tsx src/seedDemoData.ts",
+    "db:seed-demo:compiled": "node dist/seedDemoData.js",
+    "test": "node --import tsx --test test/*.test.mts"
+  },
+  "dependencies": {
+    "@types/nodemailer": "^8.0.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.7.3",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^10.4.0",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.14.0",
+    "@types/pg": "^8.11.6",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.3"
+  }
+}

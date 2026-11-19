@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1120" viewBox="0 0 1600 1120">
+  <defs>
+    <style>
+      .bg{fill:#f5f3ee}.white{fill:#fff}.ink{fill:#201b13}.muted{fill:#756d60}.gold{fill:#c99a2e}.goldlight{fill:#f3e7c6}.line{stroke:#e6e0d0}.nav{fill:#100e0a}.navtxt{fill:#cfc5ac;font:15px Arial}.small{font:12px Arial}.body{font:14px Arial}.title{font:bold 22px Arial}.h2{font:bold 16px Arial}.metric{font:bold 26px Arial}.label{font:12px Arial;fill:#756d60}.pill{font:bold 11px Arial}.bold{font:bold 13px Arial}
+    </style>
+  </defs>
+  <rect width="1600" height="1120" class="bg"/>
+  <text x="48" y="48" class="title ink">BML Loan Management System · Option A</text>
+  <text x="48" y="74" class="body muted">Integrated lifecycle concept · desktop workspace with role-based access and mobile field assessment</text>
+
+  <!-- Main application frame -->
+  <rect x="48" y="102" width="1504" height="724" rx="14" fill="#fff" stroke="#ded7c8"/>
+  <path d="M62 102h220v724H62a14 14 0 0 1-14-14V116a14 14 0 0 1 14-14z" class="nav"/>
+  <image x="74" y="120" width="40" height="40" href="public/assets/brianna-logo.png"/>
+  <text x="124" y="137" fill="#c99a2e" font-family="Arial" font-size="14" font-weight="bold">BRIANNA</text><text x="124" y="153" fill="#cfc5ac" font-family="Arial" font-size="9">MICROFINANCE LTD</text>
+  <g class="navtxt">
+    <rect x="62" y="181" width="192" height="40" rx="6" fill="#2b2210"/><rect x="62" y="181" width="3" height="40" fill="#c99a2e"/><text x="88" y="207" fill="#d7ad4a">▦  Dashboard</text>
+    <text x="88" y="249">♙  Customers</text><text x="88" y="291">♧  Groups</text><text x="88" y="333">▤  Applications</text><text x="88" y="375">✓  Assessment</text><text x="88" y="417">◉  Approvals</text><text x="88" y="459">＄  Disbursement</text><text x="88" y="501">↻  Repayments</text><text x="88" y="543">▥  Loan management</text><text x="88" y="585">▤  Reports</text>
+  </g>
+  <line x1="66" y1="766" x2="256" y2="766" stroke="#352d1e"/><circle cx="91" cy="793" r="16" fill="#c99a2e"/><text x="85" y="798" class="bold ink">JM</text><text x="116" y="790" fill="#fff" class="body">Juma Mrema</text><text x="116" y="806" fill="#9d947f" class="small">Loan Officer</text>
+  <rect x="282" y="102" width="1270" height="54" fill="#fff"/><line x1="282" y1="156" x2="1552" y2="156" class="line"/>
+  <text x="310" y="135" class="body" fill="#8a6a1c" font-weight="bold">Brianna Microfinance Limited</text><text x="1245" y="135" class="body ink">Juma Mrema  ·  Loan Officer</text><circle cx="1218" cy="130" r="15" fill="#c99a2e"/><text x="1213" y="135" class="bold ink">J</text>
+  <text x="310" y="196" class="title ink">Good morning, Juma</text><text x="310" y="220" class="body muted">Your portfolio and next actions across Mikocheni Centre · Zone 1</text><rect x="1320" y="177" width="200" height="34" rx="6" fill="#fff" stroke="#e6e0d0"/><text x="1340" y="199" class="small muted">18 October 2026   ▾</text>
+
+  <!-- KPI cards -->
+  <g>
+    <rect x="310" y="242" width="280" height="94" rx="9" class="white" stroke="#e6e0d0"/><rect x="326" y="260" width="38" height="38" rx="8" class="goldlight"/><text x="376" y="272" class="label">MY ACTIVE PORTFOLIO</text><text x="376" y="307" class="metric ink">TZS 46.5M</text>
+    <rect x="606" y="242" width="280" height="94" rx="9" class="white" stroke="#e6e0d0"/><rect x="622" y="260" width="38" height="38" rx="8" fill="#fff0de"/><text x="672" y="272" class="label">APPLICATIONS IN PROGRESS</text><text x="672" y="307" class="metric ink">18</text>
+    <rect x="902" y="242" width="280" height="94" rx="9" class="white" stroke="#e6e0d0"/><rect x="918" y="260" width="38" height="38" rx="8" fill="#e4f2e7"/><text x="968" y="272" class="label">REPAYMENTS DUE TODAY</text><text x="968" y="307" class="metric ink">12</text>
+    <rect x="1198" y="242" width="322" height="94" rx="9" class="white" stroke="#e6e0d0"/><rect x="1214" y="260" width="38" height="38" rx="8" fill="#fae5e1"/><text x="1264" y="272" class="label">OVERDUE · PAR 30</text><text x="1264" y="307" class="metric ink">5 · 5.0%</text>
+  </g>
+  <!-- lifecycle strip -->
+  <rect x="310" y="352" width="1210" height="153" rx="10" class="white" stroke="#e6e0d0"/><text x="332" y="379" class="h2 ink">Loan lifecycle pipeline</text><text x="332" y="399" class="small muted">Both Group and Business Emergency products · select a stage to open its work queue</text>
+  <g font-family="Arial" text-anchor="middle">
+    <rect x="336" y="423" width="205" height="57" rx="8" fill="#f3e7c6"/><text x="438" y="446" class="bold ink">1  Assessment</text><text x="438" y="466" class="small muted">18 applications</text>
+    <path d="M546 451h22m-7-7 7 7-7 7" stroke="#c99a2e" fill="none" stroke-width="2"/>
+    <rect x="575" y="423" width="205" height="57" rx="8" fill="#faf8f2" stroke="#e6e0d0"/><text x="678" y="446" class="bold ink">2  Approval</text><text x="678" y="466" class="small muted">9 to verify · 4 committee</text>
+    <path d="M785 451h22m-7-7 7 7-7 7" stroke="#c99a2e" fill="none" stroke-width="2"/>
+    <rect x="814" y="423" width="205" height="57" rx="8" fill="#faf8f2" stroke="#e6e0d0"/><text x="916" y="446" class="bold ink">3  Disbursement</text><text x="916" y="466" class="small muted">3 ready</text>
+    <path d="M1024 451h22m-7-7 7 7-7 7" stroke="#c99a2e" fill="none" stroke-width="2"/>
+    <rect x="1053" y="423" width="205" height="57" rx="8" fill="#faf8f2" stroke="#e6e0d0"/><text x="1155" y="446" class="bold ink">4  Repayment</text><text x="1155" y="466" class="small muted">12 due · 5 overdue</text>
+    <path d="M1263 451h22m-7-7 7 7-7 7" stroke="#c99a2e" fill="none" stroke-width="2"/>
+    <rect x="1292" y="423" width="205" height="57" rx="8" fill="#faf8f2" stroke="#e6e0d0"/><text x="1394" y="446" class="bold ink">5  Loan management</text><text x="1394" y="466" class="small muted">PAR · restructure · monitor</text>
+  </g>
+  <!-- work queue and chart -->
+  <rect x="310" y="521" width="770" height="275" rx="10" class="white" stroke="#e6e0d0"/><text x="332" y="550" class="h2 ink">My next actions</text><rect x="855" y="532" width="198" height="30" rx="5" fill="#f5f3ee" stroke="#e6e0d0"/><text x="870" y="552" class="small muted">Search applications</text>
+  <rect x="332" y="574" width="726" height="30" fill="#faf8f2"/><text x="345" y="594" class="label">APPLICANT</text><text x="575" y="594" class="label">PRODUCT</text><text x="717" y="594" class="label">STAGE</text><text x="865" y="594" class="label">UPDATED</text>
+  <g class="body ink"><text x="345" y="633">Neema Women Group</text><text x="575" y="633">Group Loan</text><text x="865" y="633">Today, 09:42</text><text x="345" y="679">Asha Mwakyusa</text><text x="575" y="679">Business Emergency</text><text x="865" y="679">Today, 08:17</text><text x="345" y="725">Upendo Traders</text><text x="575" y="725">Group Loan</text><text x="865" y="725">Yesterday</text></g>
+  <g><rect x="710" y="614" width="132" height="25" rx="12" fill="#f3e7c6"/><text x="719" y="631" class="small ink">Field assessment</text><rect x="710" y="660" width="132" height="25" rx="12" fill="#e4f2e7"/><text x="719" y="677" class="small ink">Supervisor review</text><rect x="710" y="706" width="112" height="25" rx="12" fill="#fff0de"/><text x="719" y="723" class="small ink">Evidence needed</text></g>
+  <rect x="1096" y="521" width="424" height="275" rx="10" class="white" stroke="#e6e0d0"/><text x="1118" y="550" class="h2 ink">Portfolio health</text><text x="1118" y="571" class="small muted">Outstanding balance by month · TZS</text>
+  <line x1="1145" y1="739" x2="1490" y2="739" stroke="#e6e0d0"/><line x1="1145" y1="616" x2="1490" y2="616" stroke="#f0ece3"/><line x1="1145" y1="677" x2="1490" y2="677" stroke="#f0ece3"/>
+  <g fill="#c99a2e"><rect x="1160" y="692" width="27" height="47" rx="3"/><rect x="1208" y="674" width="27" height="65" rx="3"/><rect x="1256" y="683" width="27" height="56" rx="3"/><rect x="1304" y="648" width="27" height="91" rx="3"/><rect x="1352" y="637" width="27" height="102" rx="3"/><rect x="1400" y="625" width="27" height="114" rx="3"/><rect x="1448" y="612" width="27" height="127" rx="3"/></g>
+  <g class="small muted" text-anchor="middle"><text x="1174" y="759">Apr</text><text x="1222" y="759">May</text><text x="1270" y="759">Jun</text><text x="1318" y="759">Jul</text><text x="1366" y="759">Aug</text><text x="1414" y="759">Sep</text><text x="1462" y="759">Oct</text></g>
+
+  <!-- screen concepts footer -->
+  <text x="48" y="866" class="title ink">Core screen concepts</text><text x="48" y="889" class="body muted">Connected role views keep the workflow traceable from customer introduction to loan closure.</text>
+  <!-- assessment card -->
+  <rect x="48" y="910" width="350" height="180" rx="11" class="white" stroke="#e6e0d0"/><text x="68" y="940" class="h2 ink">A · Field assessment</text><text x="68" y="962" class="small muted">Officer · mobile-ready form</text><rect x="68" y="977" width="310" height="30" rx="5" fill="#f5f3ee"/><text x="80" y="997" class="small ink">Applicant: Neema Women Group</text><rect x="68" y="1016" width="145" height="28" rx="5" fill="#f5f3ee"/><rect x="222" y="1016" width="156" height="28" rx="5" fill="#f5f3ee"/><text x="80" y="1035" class="small muted">Cash flow  TZS 850k</text><text x="234" y="1035" class="small muted">Requested  TZS 3.0M</text><rect x="68" y="1054" width="102" height="23" rx="5" fill="#f3e7c6"/><text x="82" y="1070" class="small ink">＋ Evidence</text><text x="185" y="1070" class="small muted">Visit notes · photos · draft sync</text>
+  <!-- committee card -->
+  <rect x="418" y="910" width="350" height="180" rx="11" class="white" stroke="#e6e0d0"/><text x="438" y="940" class="h2 ink">B · Committee review</text><text x="438" y="962" class="small muted">Supervisor / committee · online queue</text><text x="438" y="993" class="bold ink">Asha Mwakyusa · Business Emergency</text><text x="438" y="1015" class="small muted">Recommendation: TZS 1.2M · Evidence 4 files</text><line x1="438" y1="1027" x2="748" y2="1027" class="line"/><rect x="438" y="1042" width="78" height="27" rx="5" fill="#e4f2e7"/><text x="455" y="1060" class="small ink">Approve</text><rect x="526" y="1042" width="78" height="27" rx="5" fill="#fff0de"/><text x="544" y="1060" class="small ink">Return</text><text x="619" y="1060" class="small muted">Decision logged · 2/3 votes</text>
+  <!-- finance card -->
+  <rect x="788" y="910" width="350" height="180" rx="11" class="white" stroke="#e6e0d0"/><text x="808" y="940" class="h2 ink">C · Disbursement &amp; repayment</text><text x="808" y="962" class="small muted">Finance · transaction record and schedule</text><text x="808" y="994" class="bold ink">Loan BML-2026-00418 · Approved TZS 1.2M</text><text x="808" y="1017" class="small muted">Disbursed TZS 1.2M   ·   Ref: M-Pesa ****4821</text><rect x="808" y="1032" width="310" height="38" rx="6" fill="#faf8f2"/><text x="820" y="1048" class="small ink">Next instalment  TZS 120,000  ·  25 Oct</text><text x="820" y="1064" class="small muted">Balance TZS 960,000  ·  On track</text>
+  <!-- management card -->
+  <rect x="1158" y="910" width="394" height="180" rx="11" class="white" stroke="#e6e0d0"/><text x="1178" y="940" class="h2 ink">D · Management &amp; audit</text><text x="1178" y="962" class="small muted">Management · centre / zone / officer filters</text><text x="1178" y="993" class="small ink">Portfolio TZS 46.5M   ·   Collected TZS 8.2M</text><text x="1178" y="1017" class="small ink">PAR 1: 14%   ·   PAR 30: 5%</text><rect x="1178" y="1032" width="352" height="38" rx="6" fill="#faf8f2"/><text x="1190" y="1048" class="small ink">Officer: J. Mrema changed application status</text><text x="1190" y="1064" class="small muted">18 Oct · 09:42 · immutable audit event</text>
+</svg>

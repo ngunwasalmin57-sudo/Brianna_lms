@@ -1,0 +1,62 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DB_ADMIN_PASSWORD:-local-admin-password}
+      POSTGRES_DB: bml_lms
+      DB_PASSWORD: ${DB_PASSWORD:-local-app-password}
+    volumes:
+      - bml_dev_db:/var/lib/postgresql/data
+      - ./docker/postgres-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d bml_lms"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    ports: ["5432:5432"]
+
+  backend:
+    build:
+      context: ./backend
+      target: development
+    command: ["npm", "run", "dev"]
+    environment:
+      PORT: "4000"
+      DATABASE_URL: postgresql://bml_app:${DB_PASSWORD:-local-app-password}@db:5432/bml_lms
+      JWT_SECRET: ${JWT_SECRET:-local-development-secret-change-this-before-hosting-1234567890}
+      CLIENT_ORIGIN: http://localhost:5173
+      SMTP_HOST: ${SMTP_HOST:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_SECURE: ${SMTP_SECURE:-false}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      EMAIL_FROM: ${EMAIL_FROM:-}
+      BML_BOOTSTRAP_ADMIN_USERNAME: ${BML_BOOTSTRAP_ADMIN_USERNAME:-}
+      BML_BOOTSTRAP_ADMIN_NAME: ${BML_BOOTSTRAP_ADMIN_NAME:-}
+      BML_BOOTSTRAP_ADMIN_PASSWORD: ${BML_BOOTSTRAP_ADMIN_PASSWORD:-}
+    ports: ["4000:4000"]
+    volumes:
+      - ./backend:/app
+      - backend_node_modules:/app/node_modules
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+      target: development
+    environment:
+      VITE_API_URL: http://localhost:4000
+      VITE_LOCAL_DEMO_MODE: "false"
+    ports: ["5173:5173"]
+    volumes:
+      - ./frontend:/app
+      - frontend_node_modules:/app/node_modules
+    depends_on: [backend]
+
+volumes:
+  bml_dev_db:
+  backend_node_modules:
+  frontend_node_modules:
